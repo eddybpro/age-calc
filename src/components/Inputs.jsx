@@ -154,7 +154,7 @@ function Inputs() {
               type="text"
               name="years"
               id="year"
-              placeholder="yy"
+              placeholder="yyyy"
               value={age.years}
               onChange={handleChange}
             />

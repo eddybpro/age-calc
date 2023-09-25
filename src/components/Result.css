@@ -32,7 +32,7 @@ html {
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 10rem;
   width: 100%;
-  max-width: 50rem;
+  max-width: 55rem;
   margin: auto;
 }
 
@@ -46,4 +46,10 @@ html {
 
 .ResultBox > strong > span {
   color: var(--color-site-3);
+}
+
+@media screen and (min-width: 769px) {
+  .ResultBox > strong {
+    font-size: 5.2rem;
+  }
 }
