@@ -105,7 +105,7 @@ function Inputs() {
     }));
   };
   return (
-    <>
+    <main>
       <div className="InputsBox">
         <div className="InputsBox-Form">
           <label htmlFor="day" className={isError.status ? "error" : ""}>
@@ -179,7 +179,7 @@ function Inputs() {
         isError={isError.status}
         showDashes={showDashes}
       />
-    </>
+    </main>
   );
 }
 export default Inputs;
