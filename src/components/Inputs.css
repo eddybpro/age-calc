@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  --color-brand-1: hsl(0, 0%, 8%);
+  --color-brand-2: hsl(0, 1%, 44%);
+  --color-brand-3: hsl(0, 100%, 67%);
+
+  --color-site-1-2: hsl(0, 0%, 86%);
+  --color-site-1-1: hsl(0, 0%, 94%);
+  --color-site-2: hsl(0, 0%, 100%);
+  --color-site-3: hsl(259, 100%, 65%);
+
+  --font-poppins: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-poppins);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.InputsBox {
+  padding: 2rem;
+  background-color: var(--color-site-2);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.InputsBox-Form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  color: var(--color-brand-2);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+label.error {
+  color: var(--color-brand-3);
+}
+
+input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--color-site-1-2);
+  font-size: 2.8rem;
+  color: var(--color-brand-1);
+  text-transform: uppercase;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+}
+
+input::placeholder {
+  color: var(--color-brand-2);
+}
+
+input.error {
+  border-color: var(--color-brand-3);
+}
+
+.InputBox-Form-ParaError {
+  position: absolute;
+  left: 0;
+  bottom: -4rem;
+  text-transform: lowercase;
+  color: var(--color-brand-3);
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.InputBox-Form-ParaError::first-letter {
+  text-transform: uppercase;
+}
+
+.InputsBox-Container {
+  position: relative;
+  padding: 4rem 0 3rem;
+}
+
+.InputsBox-Container-Line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--color-site-1-2);
+}
+
+.InputsBox-Container-Btn {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--color-site-3);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.InputsBox-Container-Btn > img {
+  width: 50%;
+  height: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .InputsBox-Container-Btn {
+    position: absolute;
+    top: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
