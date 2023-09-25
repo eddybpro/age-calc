@@ -163,7 +163,11 @@ function Inputs() {
         </div>
         <div className="InputsBox-Container">
           <div className="InputsBox-Container-Line"></div>
-          <button className="InputsBox-Container-Btn" onClick={handleClick}>
+          <button
+            className="InputsBox-Container-Btn"
+            aria-label="Calculate"
+            onClick={handleClick}
+          >
             <img src={ArrowIcon} alt="" />
           </button>
         </div>
