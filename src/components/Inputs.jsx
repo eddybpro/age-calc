@@ -41,7 +41,13 @@ function Inputs() {
         days: Math.floor(diff.values.days),
       });
 
-      setIsError((prev) => ({ ...prev }));
+      setIsError((prev) => ({
+        ...prev,
+        status: false,
+        day: "",
+        month: "",
+        year: "",
+      }));
     } catch (error) {
       if (age.days === "") {
         setIsError((prev) => ({
